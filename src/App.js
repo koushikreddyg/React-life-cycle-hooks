@@ -33,6 +33,8 @@ const App = () => {
 }
 
 const Notes = ({ title, body, setNotes }) => {
+
+  // component will unmount
   useEffect(() => {
     console.log('component mounted')
     return () => {
@@ -68,7 +70,7 @@ const Notes = ({ title, body, setNotes }) => {
 //   useEffect(() => {
 //     console.log('it should run only once')
 //   }, [])
-
+  // component will update based on particular variable
 //   useEffect(() => {
 //     console.log('count changed')
 //     document.title = count;
